@@ -201,25 +201,26 @@ body {
 header {
     margin: 0;
     padding: 20px;
-    background-image: linear-gradient(to right, blue, white);
+    background-image: linear-gradient(to right, #4d7ca8, white);
     border: thick solid black;
 }
 
 header p {
   font-size: 50px;
-  font-family: 'Shojumaru', cursive;
+  font-family: 'Poller One', cursive;
 }
 
 h1 {
   text-decoration: underline;
   text-align: center;
-  font-family: 'Paytone One', sans-serif;
+  font-family: 'Crimson Text', serif;
+  font-size: 40px;
 }
 
 article {
     margin: 0;
     padding: 20px;
-    background-color: red;
+    background-color: #4d7ca8;
     border: thin solid black;
 }
 
@@ -237,6 +238,7 @@ article {
     border-right: thin solid black;
     float: left;
     width: 100%;
+    background-image: = ('Travel Photos/background.jpg');
 }
 
 .column:last-child {
@@ -273,9 +275,8 @@ li {
   margin-right: auto;
   height: auto; 
   width: auto; 
-  max-width: 575px; 
-  max-height: 575px;
-  border: 10px solid black;
+  max-width: 700px; 
+  max-height: 700px;
   /*padding: 10px 20px;
 
 }
