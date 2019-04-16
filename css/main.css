@@ -226,7 +226,6 @@ article {
 
 .row1 {
     margin: 0;
-    padding: 20px 0;
     background-color: #fff;
     border: thin solid black;
 }
@@ -238,7 +237,6 @@ article {
     border-right: thin solid black;
     float: left;
     width: 100%;
-    background-image: = ('Travel Photos/background.jpg');
 }
 
 .column:last-child {
