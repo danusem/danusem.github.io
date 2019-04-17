@@ -194,7 +194,7 @@ body {
 .inner-wrapper {
     margin: 0 auto;
     padding: 20px;
-    width: 1200px;
+    max-width: 1200px;
     background-color: #fff;
 }
 
@@ -226,7 +226,6 @@ article {
 
 .row1 {
     margin: 0;
-    padding: 20px 0;
     background-color: #fff;
     border: thin solid black;
 }
@@ -238,7 +237,6 @@ article {
     border-right: thin solid black;
     float: left;
     width: 100%;
-    background-image: = ('Travel Photos/background.jpg');
 }
 
 .column:last-child {
@@ -271,107 +269,14 @@ li {
 
 .photo {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto; 
-  width: auto; 
-  max-width: 700px; 
-  max-height: 700px;
-  /*padding: 10px 20px;
-
+  width: 100%; 
 }
 
- 
-/* =========================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================= */
-
-   @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+.slick-slider {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
- 
-/* ==========================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================== */
-
-   @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster */
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+.slick-prev:before, .slick-next:before {
+  color: black;
 }
